@@ -1,0 +1,24 @@
+{
+  "name": "flyup-uc14-tests",
+  "private": true,
+  "scripts": {
+    "test": "playwright test --config playwright.all.config.js",
+    "test:all": "playwright test --config playwright.all.config.js",
+    "test:uc6": "playwright test --config playwright.uc6.config.js",
+    "test:uc14-001": "playwright test --config playwright.uc14.config.js",
+    "test:uc14-all": "playwright test --config playwright.uc14-all.config.js",
+    "test:tc14-002": "playwright test --config playwright.uc14-002.config.js",
+    "test:investment": "playwright test invest.spec.js --config playwright.config.js",
+    "login": "node scripts/google-login.js",
+    "login:admin": "node scripts/admin-login.js",
+    "report": "playwright show-report",
+    "test:uc21": "playwright test --config playwright.uc21.config.js",
+    "test:uc23": "playwright test --config playwright.uc23.config.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0"
+  }
+}
